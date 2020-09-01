@@ -26,8 +26,9 @@ namespace TPJPlayer
         {
             if (enabled)
             {
-                samples.Enqueue(sample);
-                return Math.Min(1, Math.Max(-1, sample + EchoFactor * samples.Dequeue()));
+                float en = sample + EchoFactor * 0.1f * samples.Dequeue();
+                samples.Enqueue(en);
+                return Math.Min(1, Math.Max(-1, en));
             }
             else
             {

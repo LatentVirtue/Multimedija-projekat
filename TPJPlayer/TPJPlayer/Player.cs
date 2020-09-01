@@ -23,7 +23,7 @@ namespace TPJPlayer
         public bool open()
         {
             OpenFileDialog d = new OpenFileDialog();
-            d.Filter = "Audio File (*.mp3;*.wav)|*.mp3;*.wav;";
+            d.Filter = "Audio File (*.mp3;*.wav;*.flac)|*.mp3;*.wav;*.flac;";
             if (d.ShowDialog() != DialogResult.OK)
             {
                 return false;
