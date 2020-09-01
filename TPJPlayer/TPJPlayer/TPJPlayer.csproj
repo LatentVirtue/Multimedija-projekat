@@ -54,6 +54,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EffectStream.cs" />
+    <Compile Include="Effects\Distorsion.cs" />
+    <Compile Include="Effects\Echo.cs" />
+    <Compile Include="Effects\Effect.cs" />
+    <Compile Include="Effects\Panning.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

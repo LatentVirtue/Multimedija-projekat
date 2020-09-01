@@ -11,3 +11,16 @@ C:\Users\Aleksandar\source\repos\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.csproj.
 C:\Users\Aleksandar\source\repos\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.csproj.CopyComplete
 C:\Users\Aleksandar\source\repos\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.exe
 C:\Users\Aleksandar\source\repos\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.pdb
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\bin\Debug\TPJPlayer.exe.config
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\bin\Debug\TPJPlayer.exe
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\bin\Debug\TPJPlayer.pdb
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\bin\Debug\NAudio.dll
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\bin\Debug\NAudio.xml
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.csprojAssemblyReference.cache
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.Form1.resources
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.Properties.Resources.resources
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.csproj.GenerateResource.cache
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.csproj.CoreCompileInputs.cache
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.csproj.CopyComplete
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.exe
+C:\Users\aleks\Desktop\Multimedija projekat\TPJPlayer\TPJPlayer\obj\Debug\TPJPlayer.pdb

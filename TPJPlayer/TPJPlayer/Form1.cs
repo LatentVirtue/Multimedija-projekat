@@ -341,7 +341,7 @@ namespace TPJPlayer
 
         private void mod_trackbar_Scroll(object sender, EventArgs e)
         {
-            if (glavni.effect != null)
+            /*if (glavni.effect != null)
             {
                 foreach (List<Effect> l in glavni.effect.Effects)
                 {
@@ -362,12 +362,12 @@ namespace TPJPlayer
                         }
                     }
                 }
-            }
+            }*/
         }
 
         private void mod_check_enabled_CheckedChanged(object sender, EventArgs e)
         {
-            if (glavni.effect != null)
+            /*if (glavni.effect != null)
             {
                 foreach (List<Effect> l in glavni.effect.Effects)
                 {
@@ -380,12 +380,12 @@ namespace TPJPlayer
                         }
                     }
                 }
-            }
+            }*/
         }
 
         private void ce2_trackbar_Scroll(object sender, EventArgs e)
         {
-            if (glavni.effect != null)
+            /*if (glavni.effect != null)
             {
                 foreach (List<Effect> l in glavni.effect.Effects)
                 {
@@ -399,12 +399,12 @@ namespace TPJPlayer
                         }
                     }
                 }
-            }
+            }*/
         }
 
         private void ce2_check_enabled_CheckedChanged(object sender, EventArgs e)
         {
-            if (glavni.effect != null)
+            /*if (glavni.effect != null)
             {
                 foreach (List<Effect> l in glavni.effect.Effects)
                 {
@@ -417,12 +417,12 @@ namespace TPJPlayer
                         }
                     }
                 }
-            }
+            }*/
         }
 
         private void ce3_trackbar_Scroll(object sender, EventArgs e)
         {
-            if (glavni.effect != null)
+            /*if (glavni.effect != null)
             {
                 foreach (List<Effect> l in glavni.effect.Effects)
                 {
@@ -436,12 +436,12 @@ namespace TPJPlayer
                         }
                     }
                 }
-            }
+            }*/
         }
 
         private void ce3_trackbar2_Scroll(object sender, EventArgs e)
         {
-            if (glavni.effect != null)
+            /*if (glavni.effect != null)
             {
                 foreach (List<Effect> l in glavni.effect.Effects)
                 {
@@ -455,12 +455,12 @@ namespace TPJPlayer
                         }
                     }
                 }
-            }
+            }*/
         }
 
         private void ce3_check_enabled_CheckedChanged(object sender, EventArgs e)
         {
-            if (glavni.effect != null)
+            /*if (glavni.effect != null)
             {
                 foreach (List<Effect> l in glavni.effect.Effects)
                 {
@@ -473,7 +473,7 @@ namespace TPJPlayer
                         }
                     }
                 }
-            }
+            }*/
         }
 
         private void progress_timer_Tick(object sender, EventArgs e)
