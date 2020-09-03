@@ -494,7 +494,7 @@
             // progress_timer
             // 
             this.progress_timer.Enabled = true;
-            this.progress_timer.Interval = 1000;
+            this.progress_timer.Interval = 200;
             this.progress_timer.Tick += new System.EventHandler(this.progress_timer_Tick);
             // 
             // Form1
