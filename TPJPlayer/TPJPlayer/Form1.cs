@@ -72,8 +72,8 @@ namespace TPJPlayer
             //kompresija
             ce2_box.Enabled = false;
             ce2_check_enabled.Enabled = true;
-            ce2_trackbar.Value = 0;
-            ce2_label.Text = "Intensity: 0";
+            ce2_trackbar.Value = 2;
+            ce2_label.Text = "Intensity: 2";
             //tone
             ce3_box.Enabled = false;
             ce3_check_enabled.Checked = true;
@@ -129,8 +129,8 @@ namespace TPJPlayer
                 //kompresija
                 ce2_box.Enabled = true;
                 ce2_check_enabled.Enabled = true;
-                ce2_trackbar.Value = 0;
-                ce2_label.Text = "Intensity: 0";
+                ce2_trackbar.Value = 2;
+                ce2_label.Text = "Intensity: 2";
                 //tone
                 ce3_box.Enabled = true;
                 ce3_check_enabled.Checked = true;
@@ -385,39 +385,39 @@ namespace TPJPlayer
 
         private void ce2_trackbar_Scroll(object sender, EventArgs e)
         {
-            /*if (glavni.effect != null)
+            if (glavni.effect != null)
             {
                 foreach (List<Effect> l in glavni.effect.Effects)
                 {
                     foreach (Effect ef in l)
                     {
-                        if (ef is CustomEffect2)
+                        if (ef is Compression)
                         {
-                            CustomEffect2 ce2 = ef as CustomEffect2;
+                            Compression ce2 = ef as Compression;
                             ce2.Update(ce2_trackbar.Value);
                             ce2_label.Text = "Intensity: " + ce2_trackbar.Value;
                         }
                     }
                 }
-            }*/
+            }
         }
 
         private void ce2_check_enabled_CheckedChanged(object sender, EventArgs e)
         {
-            /*if (glavni.effect != null)
+            if (glavni.effect != null)
             {
                 foreach (List<Effect> l in glavni.effect.Effects)
                 {
                     foreach (Effect ef in l)
                     {
-                        if (ef is CustomEffect2)
+                        if (ef is Compression)
                         {
-                            CustomEffect2 ce2 = ef as CustomEffect2;
+                            Compression ce2 = ef as Compression;
                             ce2.enabled = ce2_check_enabled.Checked;
                         }
                     }
                 }
-            }*/
+            }
         }
 
         private void ce3_trackbar_Scroll(object sender, EventArgs e)

@@ -337,10 +337,11 @@
             // ce2_trackbar
             // 
             this.ce2_trackbar.Location = new System.Drawing.Point(6, 42);
-            this.ce2_trackbar.Maximum = 20;
+            this.ce2_trackbar.Minimum = 2;
             this.ce2_trackbar.Name = "ce2_trackbar";
             this.ce2_trackbar.Size = new System.Drawing.Size(119, 45);
             this.ce2_trackbar.TabIndex = 5;
+            this.ce2_trackbar.Value = 2;
             this.ce2_trackbar.Scroll += new System.EventHandler(this.ce2_trackbar_Scroll);
             // 
             // ce2_check_enabled

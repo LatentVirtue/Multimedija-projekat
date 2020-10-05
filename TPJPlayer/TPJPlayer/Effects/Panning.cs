@@ -17,9 +17,9 @@ namespace TPJPlayer
             id = count;
             count++;
         }
-        public void Update(float pf)
+        public void Update(float f)
         {
-            PanFactor = pf;
+            PanFactor = f;
         }
         public override float ApplyEffect(float sample)
         {

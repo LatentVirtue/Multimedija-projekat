@@ -39,6 +39,7 @@ namespace TPJPlayer
                 effect.Effects[i].Add(new Echo());
                 effect.Effects[i].Add(new Panning());
                 effect.Effects[i].Add(new Distorsion());
+                effect.Effects[i].Add(new Compression());
             }
             return true;
         }
