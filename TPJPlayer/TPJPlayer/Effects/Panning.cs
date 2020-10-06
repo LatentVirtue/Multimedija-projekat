@@ -10,12 +10,10 @@ namespace TPJPlayer
     {
         public bool enabled = true;
         public static float PanFactor = 0;
-        private static int count = 0;
-        private int id;
-        public Panning()
+        private bool left;
+        public Panning(int channel)
         {
-            id = count;
-            count++;
+            left = channel == 0;
         }
         public void Update(float f)
         {
@@ -27,7 +25,7 @@ namespace TPJPlayer
             {
                 if (PanFactor < 0)
                 {
-                    if (this.id < count / 2)
+                    if (left)
                     {
                         return Math.Min(1, Math.Max(-1, sample + sample * Math.Abs(PanFactor)));
                     }
@@ -42,7 +40,7 @@ namespace TPJPlayer
                 }
                 else
                 {
-                    if (this.id >= count / 2)
+                    if (!left)
                     {
                         return Math.Min(1, Math.Max(-1, sample + sample * Math.Abs(PanFactor)));
                     }

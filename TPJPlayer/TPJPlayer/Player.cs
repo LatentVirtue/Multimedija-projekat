@@ -152,7 +152,7 @@ namespace TPJPlayer
             for (int i = 0; i < equalizer.WaveFormat.Channels; i++)
             {
                 effect.Effects[i].Add(new Echo());
-                effect.Effects[i].Add(new Panning());
+                effect.Effects[i].Add(new Panning(i));
                 effect.Effects[i].Add(new Distorsion());
                 effect.Effects[i].Add(new Compression());
             }
