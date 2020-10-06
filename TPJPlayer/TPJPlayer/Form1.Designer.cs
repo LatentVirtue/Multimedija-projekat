@@ -46,20 +46,10 @@
             this.modulation_enabled_check = new System.Windows.Forms.CheckBox();
             this.modulation_label = new System.Windows.Forms.Label();
             this.modulation_trackbar = new System.Windows.Forms.TrackBar();
-            this.mod_box = new System.Windows.Forms.GroupBox();
-            this.mod_label = new System.Windows.Forms.Label();
-            this.mod_trackbar = new System.Windows.Forms.TrackBar();
-            this.mod_check_enabled = new System.Windows.Forms.CheckBox();
             this.ce2_box = new System.Windows.Forms.GroupBox();
             this.ce2_label = new System.Windows.Forms.Label();
             this.ce2_trackbar = new System.Windows.Forms.TrackBar();
             this.ce2_check_enabled = new System.Windows.Forms.CheckBox();
-            this.ce3_box = new System.Windows.Forms.GroupBox();
-            this.ce3_label_freq = new System.Windows.Forms.Label();
-            this.ce3_trackbar2 = new System.Windows.Forms.TrackBar();
-            this.ce3_label_a = new System.Windows.Forms.Label();
-            this.ce3_trackbar = new System.Windows.Forms.TrackBar();
-            this.ce3_check_enabled = new System.Windows.Forms.CheckBox();
             this.display_label_current = new System.Windows.Forms.Label();
             this.display_bar = new System.Windows.Forms.HScrollBar();
             this.display_time_now = new System.Windows.Forms.Label();
@@ -68,6 +58,23 @@
             this.radio_2 = new System.Windows.Forms.RadioButton();
             this.radio_3 = new System.Windows.Forms.RadioButton();
             this.progress_timer = new System.Windows.Forms.Timer(this.components);
+            this.eBox1 = new System.Windows.Forms.GroupBox();
+            this.bar_band1 = new System.Windows.Forms.TrackBar();
+            this.bar_band2 = new System.Windows.Forms.TrackBar();
+            this.bar_band3 = new System.Windows.Forms.TrackBar();
+            this.bar_band4 = new System.Windows.Forms.TrackBar();
+            this.bar_band5 = new System.Windows.Forms.TrackBar();
+            this.bar_band6 = new System.Windows.Forms.TrackBar();
+            this.bar_band7 = new System.Windows.Forms.TrackBar();
+            this.bar_band8 = new System.Windows.Forms.TrackBar();
+            this.l_band1 = new System.Windows.Forms.Label();
+            this.l_band2 = new System.Windows.Forms.Label();
+            this.l_band3 = new System.Windows.Forms.Label();
+            this.l_band4 = new System.Windows.Forms.Label();
+            this.l_band5 = new System.Windows.Forms.Label();
+            this.l_band6 = new System.Windows.Forms.Label();
+            this.l_band7 = new System.Windows.Forms.Label();
+            this.l_band8 = new System.Windows.Forms.Label();
             this.groupBox_Echo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.echo_trackbar_length)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Echo_trackbar_factor)).BeginInit();
@@ -75,13 +82,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.panning_trackbar)).BeginInit();
             this.box_modulation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modulation_trackbar)).BeginInit();
-            this.mod_box.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mod_trackbar)).BeginInit();
             this.ce2_box.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ce2_trackbar)).BeginInit();
-            this.ce3_box.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ce3_trackbar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ce3_trackbar)).BeginInit();
+            this.eBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band8)).BeginInit();
             this.SuspendLayout();
             // 
             // button_play
@@ -269,56 +280,13 @@
             this.modulation_trackbar.TabIndex = 1;
             this.modulation_trackbar.Scroll += new System.EventHandler(this.modulation_trackbar_Scroll);
             // 
-            // mod_box
-            // 
-            this.mod_box.Controls.Add(this.mod_label);
-            this.mod_box.Controls.Add(this.mod_trackbar);
-            this.mod_box.Controls.Add(this.mod_check_enabled);
-            this.mod_box.Enabled = false;
-            this.mod_box.Location = new System.Drawing.Point(557, 12);
-            this.mod_box.Name = "mod_box";
-            this.mod_box.Size = new System.Drawing.Size(127, 109);
-            this.mod_box.TabIndex = 8;
-            this.mod_box.TabStop = false;
-            this.mod_box.Text = "Modulacija";
-            // 
-            // mod_label
-            // 
-            this.mod_label.AutoSize = true;
-            this.mod_label.Location = new System.Drawing.Point(34, 90);
-            this.mod_label.Name = "mod_label";
-            this.mod_label.Size = new System.Drawing.Size(51, 13);
-            this.mod_label.TabIndex = 6;
-            this.mod_label.Text = "Range: 0";
-            // 
-            // mod_trackbar
-            // 
-            this.mod_trackbar.Location = new System.Drawing.Point(6, 42);
-            this.mod_trackbar.Name = "mod_trackbar";
-            this.mod_trackbar.Size = new System.Drawing.Size(119, 45);
-            this.mod_trackbar.TabIndex = 5;
-            this.mod_trackbar.Scroll += new System.EventHandler(this.mod_trackbar_Scroll);
-            // 
-            // mod_check_enabled
-            // 
-            this.mod_check_enabled.AutoSize = true;
-            this.mod_check_enabled.Checked = true;
-            this.mod_check_enabled.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.mod_check_enabled.Location = new System.Drawing.Point(56, 19);
-            this.mod_check_enabled.Name = "mod_check_enabled";
-            this.mod_check_enabled.Size = new System.Drawing.Size(65, 17);
-            this.mod_check_enabled.TabIndex = 4;
-            this.mod_check_enabled.Text = "Enabled";
-            this.mod_check_enabled.UseVisualStyleBackColor = true;
-            this.mod_check_enabled.CheckedChanged += new System.EventHandler(this.mod_check_enabled_CheckedChanged);
-            // 
             // ce2_box
             // 
             this.ce2_box.Controls.Add(this.ce2_label);
             this.ce2_box.Controls.Add(this.ce2_trackbar);
             this.ce2_box.Controls.Add(this.ce2_check_enabled);
             this.ce2_box.Enabled = false;
-            this.ce2_box.Location = new System.Drawing.Point(557, 129);
+            this.ce2_box.Location = new System.Drawing.Point(547, 12);
             this.ce2_box.Name = "ce2_box";
             this.ce2_box.Size = new System.Drawing.Size(127, 109);
             this.ce2_box.TabIndex = 9;
@@ -356,73 +324,6 @@
             this.ce2_check_enabled.Text = "Enabled";
             this.ce2_check_enabled.UseVisualStyleBackColor = true;
             this.ce2_check_enabled.CheckedChanged += new System.EventHandler(this.ce2_check_enabled_CheckedChanged);
-            // 
-            // ce3_box
-            // 
-            this.ce3_box.Controls.Add(this.ce3_label_freq);
-            this.ce3_box.Controls.Add(this.ce3_trackbar2);
-            this.ce3_box.Controls.Add(this.ce3_label_a);
-            this.ce3_box.Controls.Add(this.ce3_trackbar);
-            this.ce3_box.Controls.Add(this.ce3_check_enabled);
-            this.ce3_box.Enabled = false;
-            this.ce3_box.Location = new System.Drawing.Point(703, 12);
-            this.ce3_box.Name = "ce3_box";
-            this.ce3_box.Size = new System.Drawing.Size(127, 187);
-            this.ce3_box.TabIndex = 10;
-            this.ce3_box.TabStop = false;
-            this.ce3_box.Text = "Tone";
-            // 
-            // ce3_label_freq
-            // 
-            this.ce3_label_freq.AutoSize = true;
-            this.ce3_label_freq.Location = new System.Drawing.Point(34, 154);
-            this.ce3_label_freq.Name = "ce3_label_freq";
-            this.ce3_label_freq.Size = new System.Drawing.Size(69, 13);
-            this.ce3_label_freq.TabIndex = 8;
-            this.ce3_label_freq.Text = "Frequency: 1";
-            // 
-            // ce3_trackbar2
-            // 
-            this.ce3_trackbar2.Location = new System.Drawing.Point(2, 106);
-            this.ce3_trackbar2.Maximum = 20;
-            this.ce3_trackbar2.Minimum = 1;
-            this.ce3_trackbar2.Name = "ce3_trackbar2";
-            this.ce3_trackbar2.Size = new System.Drawing.Size(119, 45);
-            this.ce3_trackbar2.TabIndex = 7;
-            this.ce3_trackbar2.Value = 1;
-            this.ce3_trackbar2.Scroll += new System.EventHandler(this.ce3_trackbar2_Scroll);
-            // 
-            // ce3_label_a
-            // 
-            this.ce3_label_a.AutoSize = true;
-            this.ce3_label_a.Location = new System.Drawing.Point(34, 90);
-            this.ce3_label_a.Name = "ce3_label_a";
-            this.ce3_label_a.Size = new System.Drawing.Size(58, 13);
-            this.ce3_label_a.TabIndex = 6;
-            this.ce3_label_a.Text = "Intensity: 0";
-            // 
-            // ce3_trackbar
-            // 
-            this.ce3_trackbar.Location = new System.Drawing.Point(6, 42);
-            this.ce3_trackbar.Maximum = 50;
-            this.ce3_trackbar.Minimum = -50;
-            this.ce3_trackbar.Name = "ce3_trackbar";
-            this.ce3_trackbar.Size = new System.Drawing.Size(119, 45);
-            this.ce3_trackbar.TabIndex = 5;
-            this.ce3_trackbar.Scroll += new System.EventHandler(this.ce3_trackbar_Scroll);
-            // 
-            // ce3_check_enabled
-            // 
-            this.ce3_check_enabled.AutoSize = true;
-            this.ce3_check_enabled.Checked = true;
-            this.ce3_check_enabled.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ce3_check_enabled.Location = new System.Drawing.Point(56, 19);
-            this.ce3_check_enabled.Name = "ce3_check_enabled";
-            this.ce3_check_enabled.Size = new System.Drawing.Size(65, 17);
-            this.ce3_check_enabled.TabIndex = 4;
-            this.ce3_check_enabled.Text = "Enabled";
-            this.ce3_check_enabled.UseVisualStyleBackColor = true;
-            this.ce3_check_enabled.CheckedChanged += new System.EventHandler(this.ce3_check_enabled_CheckedChanged);
             // 
             // display_label_current
             // 
@@ -498,11 +399,214 @@
             this.progress_timer.Interval = 200;
             this.progress_timer.Tick += new System.EventHandler(this.progress_timer_Tick);
             // 
+            // eBox1
+            // 
+            this.eBox1.Controls.Add(this.l_band8);
+            this.eBox1.Controls.Add(this.l_band7);
+            this.eBox1.Controls.Add(this.l_band6);
+            this.eBox1.Controls.Add(this.l_band5);
+            this.eBox1.Controls.Add(this.l_band4);
+            this.eBox1.Controls.Add(this.l_band3);
+            this.eBox1.Controls.Add(this.l_band2);
+            this.eBox1.Controls.Add(this.l_band1);
+            this.eBox1.Controls.Add(this.bar_band8);
+            this.eBox1.Controls.Add(this.bar_band7);
+            this.eBox1.Controls.Add(this.bar_band6);
+            this.eBox1.Controls.Add(this.bar_band5);
+            this.eBox1.Controls.Add(this.bar_band4);
+            this.eBox1.Controls.Add(this.bar_band3);
+            this.eBox1.Controls.Add(this.bar_band2);
+            this.eBox1.Controls.Add(this.bar_band1);
+            this.eBox1.Location = new System.Drawing.Point(680, 12);
+            this.eBox1.Name = "eBox1";
+            this.eBox1.Size = new System.Drawing.Size(435, 273);
+            this.eBox1.TabIndex = 18;
+            this.eBox1.TabStop = false;
+            this.eBox1.Text = "Equalizer";
+            // 
+            // bar_band1
+            // 
+            this.bar_band1.Enabled = false;
+            this.bar_band1.Location = new System.Drawing.Point(25, 32);
+            this.bar_band1.Maximum = 15;
+            this.bar_band1.Minimum = -15;
+            this.bar_band1.Name = "bar_band1";
+            this.bar_band1.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.bar_band1.Size = new System.Drawing.Size(45, 206);
+            this.bar_band1.TabIndex = 4;
+            this.bar_band1.ValueChanged += new System.EventHandler(this.bar_band1_ValueChanged);
+            // 
+            // bar_band2
+            // 
+            this.bar_band2.Enabled = false;
+            this.bar_band2.Location = new System.Drawing.Point(76, 32);
+            this.bar_band2.Maximum = 15;
+            this.bar_band2.Minimum = -15;
+            this.bar_band2.Name = "bar_band2";
+            this.bar_band2.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.bar_band2.Size = new System.Drawing.Size(45, 206);
+            this.bar_band2.TabIndex = 5;
+            this.bar_band2.ValueChanged += new System.EventHandler(this.bar_band2_ValueChanged);
+            // 
+            // bar_band3
+            // 
+            this.bar_band3.Enabled = false;
+            this.bar_band3.Location = new System.Drawing.Point(127, 32);
+            this.bar_band3.Maximum = 15;
+            this.bar_band3.Minimum = -15;
+            this.bar_band3.Name = "bar_band3";
+            this.bar_band3.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.bar_band3.Size = new System.Drawing.Size(45, 206);
+            this.bar_band3.TabIndex = 6;
+            this.bar_band3.ValueChanged += new System.EventHandler(this.bar_band3_ValueChanged);
+            // 
+            // bar_band4
+            // 
+            this.bar_band4.Enabled = false;
+            this.bar_band4.Location = new System.Drawing.Point(178, 33);
+            this.bar_band4.Maximum = 15;
+            this.bar_band4.Minimum = -15;
+            this.bar_band4.Name = "bar_band4";
+            this.bar_band4.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.bar_band4.Size = new System.Drawing.Size(45, 206);
+            this.bar_band4.TabIndex = 7;
+            this.bar_band4.ValueChanged += new System.EventHandler(this.bar_band4_ValueChanged);
+            // 
+            // bar_band5
+            // 
+            this.bar_band5.Enabled = false;
+            this.bar_band5.Location = new System.Drawing.Point(229, 33);
+            this.bar_band5.Maximum = 15;
+            this.bar_band5.Minimum = -15;
+            this.bar_band5.Name = "bar_band5";
+            this.bar_band5.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.bar_band5.Size = new System.Drawing.Size(45, 206);
+            this.bar_band5.TabIndex = 8;
+            this.bar_band5.ValueChanged += new System.EventHandler(this.bar_band5_ValueChanged);
+            // 
+            // bar_band6
+            // 
+            this.bar_band6.Enabled = false;
+            this.bar_band6.Location = new System.Drawing.Point(280, 32);
+            this.bar_band6.Maximum = 15;
+            this.bar_band6.Minimum = -15;
+            this.bar_band6.Name = "bar_band6";
+            this.bar_band6.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.bar_band6.Size = new System.Drawing.Size(45, 206);
+            this.bar_band6.TabIndex = 9;
+            this.bar_band6.ValueChanged += new System.EventHandler(this.bar_band6_ValueChanged);
+            // 
+            // bar_band7
+            // 
+            this.bar_band7.Enabled = false;
+            this.bar_band7.Location = new System.Drawing.Point(331, 33);
+            this.bar_band7.Maximum = 15;
+            this.bar_band7.Minimum = -15;
+            this.bar_band7.Name = "bar_band7";
+            this.bar_band7.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.bar_band7.Size = new System.Drawing.Size(45, 206);
+            this.bar_band7.TabIndex = 10;
+            this.bar_band7.ValueChanged += new System.EventHandler(this.bar_band7_ValueChanged);
+            // 
+            // bar_band8
+            // 
+            this.bar_band8.Enabled = false;
+            this.bar_band8.Location = new System.Drawing.Point(382, 32);
+            this.bar_band8.Maximum = 15;
+            this.bar_band8.Minimum = -15;
+            this.bar_band8.Name = "bar_band8";
+            this.bar_band8.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.bar_band8.Size = new System.Drawing.Size(45, 206);
+            this.bar_band8.TabIndex = 11;
+            this.bar_band8.ValueChanged += new System.EventHandler(this.bar_band8_ValueChanged);
+            // 
+            // l_band1
+            // 
+            this.l_band1.AutoSize = true;
+            this.l_band1.Location = new System.Drawing.Point(22, 242);
+            this.l_band1.Name = "l_band1";
+            this.l_band1.Size = new System.Drawing.Size(13, 13);
+            this.l_band1.TabIndex = 12;
+            this.l_band1.Text = "0";
+            this.l_band1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // l_band2
+            // 
+            this.l_band2.AutoSize = true;
+            this.l_band2.Location = new System.Drawing.Point(73, 241);
+            this.l_band2.Name = "l_band2";
+            this.l_band2.Size = new System.Drawing.Size(13, 13);
+            this.l_band2.TabIndex = 13;
+            this.l_band2.Text = "0";
+            this.l_band2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // l_band3
+            // 
+            this.l_band3.AutoSize = true;
+            this.l_band3.Location = new System.Drawing.Point(119, 241);
+            this.l_band3.Name = "l_band3";
+            this.l_band3.Size = new System.Drawing.Size(13, 13);
+            this.l_band3.TabIndex = 14;
+            this.l_band3.Text = "0";
+            this.l_band3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // l_band4
+            // 
+            this.l_band4.AutoSize = true;
+            this.l_band4.Location = new System.Drawing.Point(175, 242);
+            this.l_band4.Name = "l_band4";
+            this.l_band4.Size = new System.Drawing.Size(13, 13);
+            this.l_band4.TabIndex = 15;
+            this.l_band4.Text = "0";
+            this.l_band4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.l_band4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // l_band5
+            // 
+            this.l_band5.AutoSize = true;
+            this.l_band5.Location = new System.Drawing.Point(226, 241);
+            this.l_band5.Name = "l_band5";
+            this.l_band5.Size = new System.Drawing.Size(13, 13);
+            this.l_band5.TabIndex = 16;
+            this.l_band5.Text = "0";
+            this.l_band5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // l_band6
+            // 
+            this.l_band6.AutoSize = true;
+            this.l_band6.Location = new System.Drawing.Point(277, 241);
+            this.l_band6.Name = "l_band6";
+            this.l_band6.Size = new System.Drawing.Size(13, 13);
+            this.l_band6.TabIndex = 17;
+            this.l_band6.Text = "0";
+            this.l_band6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // l_band7
+            // 
+            this.l_band7.AutoSize = true;
+            this.l_band7.Location = new System.Drawing.Point(328, 241);
+            this.l_band7.Name = "l_band7";
+            this.l_band7.Size = new System.Drawing.Size(13, 13);
+            this.l_band7.TabIndex = 18;
+            this.l_band7.Text = "0";
+            this.l_band7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // l_band8
+            // 
+            this.l_band8.AutoSize = true;
+            this.l_band8.Location = new System.Drawing.Point(379, 241);
+            this.l_band8.Name = "l_band8";
+            this.l_band8.Size = new System.Drawing.Size(13, 13);
+            this.l_band8.TabIndex = 19;
+            this.l_band8.Text = "0";
+            this.l_band8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(851, 297);
+            this.ClientSize = new System.Drawing.Size(1127, 297);
+            this.Controls.Add(this.eBox1);
             this.Controls.Add(this.radio_3);
             this.Controls.Add(this.radio_2);
             this.Controls.Add(this.radio_1);
@@ -510,9 +614,7 @@
             this.Controls.Add(this.display_time_now);
             this.Controls.Add(this.display_bar);
             this.Controls.Add(this.display_label_current);
-            this.Controls.Add(this.ce3_box);
             this.Controls.Add(this.ce2_box);
-            this.Controls.Add(this.mod_box);
             this.Controls.Add(this.box_modulation);
             this.Controls.Add(this.box_panning);
             this.Controls.Add(this.groupBox_Echo);
@@ -532,16 +634,19 @@
             this.box_modulation.ResumeLayout(false);
             this.box_modulation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modulation_trackbar)).EndInit();
-            this.mod_box.ResumeLayout(false);
-            this.mod_box.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mod_trackbar)).EndInit();
             this.ce2_box.ResumeLayout(false);
             this.ce2_box.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ce2_trackbar)).EndInit();
-            this.ce3_box.ResumeLayout(false);
-            this.ce3_box.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ce3_trackbar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ce3_trackbar)).EndInit();
+            this.eBox1.ResumeLayout(false);
+            this.eBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_band8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -566,20 +671,10 @@
         private System.Windows.Forms.CheckBox modulation_enabled_check;
         private System.Windows.Forms.Label modulation_label;
         private System.Windows.Forms.TrackBar modulation_trackbar;
-        private System.Windows.Forms.GroupBox mod_box;
-        private System.Windows.Forms.Label mod_label;
-        private System.Windows.Forms.TrackBar mod_trackbar;
-        private System.Windows.Forms.CheckBox mod_check_enabled;
         private System.Windows.Forms.GroupBox ce2_box;
         private System.Windows.Forms.Label ce2_label;
         private System.Windows.Forms.TrackBar ce2_trackbar;
         private System.Windows.Forms.CheckBox ce2_check_enabled;
-        private System.Windows.Forms.GroupBox ce3_box;
-        private System.Windows.Forms.Label ce3_label_a;
-        private System.Windows.Forms.TrackBar ce3_trackbar;
-        private System.Windows.Forms.CheckBox ce3_check_enabled;
-        private System.Windows.Forms.TrackBar ce3_trackbar2;
-        private System.Windows.Forms.Label ce3_label_freq;
         private System.Windows.Forms.Label display_label_current;
         private System.Windows.Forms.HScrollBar display_bar;
         private System.Windows.Forms.Label display_time_now;
@@ -588,6 +683,23 @@
         private System.Windows.Forms.RadioButton radio_2;
         private System.Windows.Forms.RadioButton radio_3;
         private System.Windows.Forms.Timer progress_timer;
+        private System.Windows.Forms.GroupBox eBox1;
+        private System.Windows.Forms.Label l_band8;
+        private System.Windows.Forms.Label l_band7;
+        private System.Windows.Forms.Label l_band6;
+        private System.Windows.Forms.Label l_band5;
+        private System.Windows.Forms.Label l_band4;
+        private System.Windows.Forms.Label l_band3;
+        private System.Windows.Forms.Label l_band2;
+        private System.Windows.Forms.Label l_band1;
+        private System.Windows.Forms.TrackBar bar_band8;
+        private System.Windows.Forms.TrackBar bar_band7;
+        private System.Windows.Forms.TrackBar bar_band6;
+        private System.Windows.Forms.TrackBar bar_band5;
+        private System.Windows.Forms.TrackBar bar_band4;
+        private System.Windows.Forms.TrackBar bar_band3;
+        private System.Windows.Forms.TrackBar bar_band2;
+        private System.Windows.Forms.TrackBar bar_band1;
     }
 }
 

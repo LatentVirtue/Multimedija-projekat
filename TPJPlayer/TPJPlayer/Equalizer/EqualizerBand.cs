@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TPJPlayer.Equalizer
+namespace TPJPlayer
 {
     class EqualizerBand
     {

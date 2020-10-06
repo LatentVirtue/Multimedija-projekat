@@ -64,23 +64,21 @@ namespace TPJPlayer
             modulation_enabled_check.Checked = true;
             modulation_label.Text = "a: 0";
             modulation_trackbar.Value = 0;
-            //modulacija
-            mod_box.Enabled = false;
-            mod_check_enabled.Checked = true;
-            mod_label.Text = "Range: 0";
-            mod_trackbar.Value = 0;
             //kompresija
             ce2_box.Enabled = false;
             ce2_check_enabled.Enabled = true;
             ce2_trackbar.Value = 2;
             ce2_label.Text = "Intensity: 2";
-            //tone
-            ce3_box.Enabled = false;
-            ce3_check_enabled.Checked = true;
-            ce3_label_a.Text = "Intensity: 0";
-            ce3_label_freq.Text = "Frequency: 1";
-            ce3_trackbar.Value = 0;
-            ce3_trackbar2.Value = 1;
+            //equalizer
+            eBox1.Enabled = false;
+            bar_band1.Enabled = false;
+            bar_band2.Enabled = false;
+            bar_band3.Enabled = false;
+            bar_band4.Enabled = false;
+            bar_band5.Enabled = false;
+            bar_band6.Enabled = false;
+            bar_band7.Enabled = false;
+            bar_band8.Enabled = false;
             //display
             display_label_current.Text = "Current: ";
             display_bar.Value = 0;
@@ -121,23 +119,21 @@ namespace TPJPlayer
                 modulation_enabled_check.Checked = true;
                 modulation_label.Text = "a: 0";
                 modulation_trackbar.Value = 0;
-                //modulacija
-                mod_box.Enabled = true;
-                mod_check_enabled.Checked = true;
-                mod_label.Text = "Range: 0";
-                mod_trackbar.Value = 0;
                 //kompresija
                 ce2_box.Enabled = true;
                 ce2_check_enabled.Enabled = true;
                 ce2_trackbar.Value = 2;
                 ce2_label.Text = "Intensity: 2";
-                //tone
-                ce3_box.Enabled = true;
-                ce3_check_enabled.Checked = true;
-                ce3_label_a.Text = "Intensity: 0";
-                ce3_label_freq.Text = "Frequency: 1";
-                ce3_trackbar.Value = 0;
-                ce3_trackbar2.Value = 1;
+                //equalizer
+                eBox1.Enabled = true;
+                bar_band1.Enabled = true;
+                bar_band2.Enabled = true;
+                bar_band3.Enabled = true;
+                bar_band4.Enabled = true;
+                bar_band5.Enabled = true;
+                bar_band6.Enabled = true;
+                bar_band7.Enabled = true;
+                bar_band8.Enabled = true;
                 //display
                 display_label_current.Text = "Current: " + glavni.Name;
                 display_bar.Value = 0;
@@ -514,6 +510,67 @@ namespace TPJPlayer
             {
                 glavni.play();
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bar_band1_ValueChanged(object sender, EventArgs e)
+        {
+            glavni.Band1 = bar_band1.Value;
+            l_band1.Text = bar_band1.Value.ToString();
+            glavni.equalizer.Update();
+        }
+
+        private void bar_band2_ValueChanged(object sender, EventArgs e)
+        {
+            glavni.Band2 = bar_band1.Value;
+            l_band2.Text = bar_band2.Value.ToString();
+            glavni.equalizer.Update();
+        }
+
+        private void bar_band3_ValueChanged(object sender, EventArgs e)
+        {
+            glavni.Band3 = bar_band3.Value;
+            l_band3.Text = bar_band3.Value.ToString();
+            glavni.equalizer.Update();
+        }
+
+        private void bar_band4_ValueChanged(object sender, EventArgs e)
+        {
+            glavni.Band4 = bar_band4.Value;
+            l_band4.Text = bar_band4.Value.ToString();
+            glavni.equalizer.Update();
+        }
+
+        private void bar_band5_ValueChanged(object sender, EventArgs e)
+        {
+            glavni.Band5 = bar_band5.Value;
+            l_band5.Text = bar_band5.Value.ToString();
+            glavni.equalizer.Update();
+        }
+
+        private void bar_band6_ValueChanged(object sender, EventArgs e)
+        {
+            glavni.Band6 = bar_band6.Value;
+            l_band6.Text = bar_band6.Value.ToString();
+            glavni.equalizer.Update();
+        }
+
+        private void bar_band7_ValueChanged(object sender, EventArgs e)
+        {
+            glavni.Band7 = bar_band7.Value;
+            l_band7.Text = bar_band7.Value.ToString();
+            glavni.equalizer.Update();
+        }
+
+        private void bar_band8_ValueChanged(object sender, EventArgs e)
+        {
+            glavni.Band8 = bar_band8.Value;
+            l_band8.Text = bar_band8.Value.ToString();
+            glavni.equalizer.Update();
         }
     }
 }

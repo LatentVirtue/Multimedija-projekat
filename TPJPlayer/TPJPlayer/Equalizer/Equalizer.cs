@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NAudio.Wave;
 using NAudio.Dsp;
-namespace TPJPlayer.Equalizer
+namespace TPJPlayer
 {
     class Equalizer : ISampleProvider
     {
@@ -45,6 +45,10 @@ namespace TPJPlayer.Equalizer
         {
             updated = true;
             CreateFilters();
+        }
+        public void Dispose()
+        {
+            
         }
 
         public WaveFormat WaveFormat => sourceProvider.WaveFormat;
