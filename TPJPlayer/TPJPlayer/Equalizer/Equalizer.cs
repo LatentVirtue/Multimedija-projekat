@@ -55,24 +55,28 @@ namespace TPJPlayer
 
         public int Read(float[] buffer, int offset, int count)
         {
-            int samplesRead = sourceProvider.Read(buffer, offset, count);
-
-            if (updated)
+            if(sourceProvider!= null && buffer != null)
             {
-                CreateFilters();
-                updated = false;
-            }
+                int samplesRead = sourceProvider.Read(buffer, offset, count);
 
-            for (int n = 0; n < samplesRead; n++)
-            {
-                int ch = n % channels;
-
-                for (int band = 0; band < bandCount; band++)
+                if (updated)
                 {
-                    buffer[offset + n] = filters[ch, band].Transform(buffer[offset + n]);
+                    CreateFilters();
+                    updated = false;
                 }
+
+                for (int n = 0; n < samplesRead; n++)
+                {
+                    int ch = n % channels;
+
+                    for (int band = 0; band < bandCount; band++)
+                    {
+                        buffer[offset + n] = filters[ch, band].Transform(buffer[offset + n]);
+                    }
+                }
+                return samplesRead;
             }
-            return samplesRead;
+            return 0;
         }
     }
 }
