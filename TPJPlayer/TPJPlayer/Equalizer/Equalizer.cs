@@ -55,9 +55,17 @@ namespace TPJPlayer
 
         public int Read(float[] buffer, int offset, int count)
         {
-            if(sourceProvider!= null && buffer != null)
+            int samplesRead = 0;
+            if (sourceProvider!= null && buffer != null && buffer.Length > 0)
             {
-                int samplesRead = sourceProvider.Read(buffer, offset, count);
+                try
+                {
+                    samplesRead  = sourceProvider.Read(buffer, offset, count);
+                }
+                finally
+                {
+
+                }
 
                 if (updated)
                 {

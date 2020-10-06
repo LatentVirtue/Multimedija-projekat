@@ -142,8 +142,8 @@ namespace TPJPlayer
             {
                 return false;
             }
-            WaveStream t;
             Dispose();
+            WaveStream t;
             this.Name = d.SafeFileName;
             t = new WaveChannel32(new AudioFileReader(d.FileName));
             effect = new EffectStream(t);
